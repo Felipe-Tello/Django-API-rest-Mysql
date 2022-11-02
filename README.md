@@ -2,6 +2,7 @@
 
 ## Technologies used
 
+* Postman
 * Python 3.9.10
 * Django 4.1.2
 * Django Rest Framework 3.14.0
