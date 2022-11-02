@@ -32,10 +32,7 @@ schema_view = swagger_get_schema_view(
 )
 
 urlpatterns = [
-    # path('docs/', TemplateView.as_view(template_name='docs.html',extra_context={'schema_url':'api_schema'}), name='swagger-ui'),
-    # path('', TemplateView.as_view(template_name='docs.html',extra_context={'schema_url':'api_schema'}), name='swagger-ui'),
-    # path('api_schema/', get_schema_view(title='Pets API',description='Guide for the REST API'), name='api_schema'),
-    path('swagger/schema/', schema_view.with_ui('swagger', cache_timeout=0), name="swagger-schema"),
+    path('', schema_view.with_ui('swagger', cache_timeout=0), name="swagger-schema"),
     re_path(r'^', include("apps.API.urls")),
 ]
 

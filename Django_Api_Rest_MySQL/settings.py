@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     "apps.API", 
     "rest_framework",
     "corsheaders",
-    # "rest_framework_swagger",
     'drf_yasg',
 ]
 
@@ -69,7 +68,6 @@ ROOT_URLCONF = 'Django_Api_Rest_MySQL.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        # 'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
